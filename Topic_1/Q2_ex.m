@@ -26,12 +26,12 @@ n_all=length(x_all);
 
 % use this to take the full data range
 
-% tstart=min(x_all);
-% tend=max(x_all);
+tstart=min(x_all);
+tend=max(x_all);
 
 % examples of taking a smaller window 
-tstart = 1910;
-tend = 1920;
+% tstart = 1910;
+% tend = 1980;
 
 %take this range of data to use in the model
 x=x_all(x_all > tstart & x_all <tend);
