@@ -1,7 +1,7 @@
 %% question 5
 
 h=0.1; %step size
-N=6; %number of steps
+N=60; %number of steps
 
 x=0:h:h*(N-1); %x values start at 0
 
@@ -65,7 +65,7 @@ end
 %% question 8
 
 h=0.1; %step size
-N=6; %number of steps
+N=600; %number of steps
 
 x=0:h:h*(N-1); %x values start at 0
 
@@ -80,3 +80,8 @@ for iStep=1:N-1
     ydashest2=1-0.25*(yest^2); %y' using yest y'=xyest^2 NOTE X(n+1)!!!!
     y(iStep+1)=y(iStep)+0.5*h*(ydashest1+ydashest2); % next value taking average of both estimates
 end
+
+
+figure;
+plot(x,y)
+

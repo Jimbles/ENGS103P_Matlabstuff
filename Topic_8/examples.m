@@ -28,7 +28,7 @@ legend('Exact','Approximate');
 
 % Solve y'(t)=-2y(t) with y0=3, 4th order Runge Kutta
 y0 = 3;                  % Initial Condition
-h=0.02;                   % Time step
+h=0.2;                   % Time step
 t = 0:h:2;               % t goes from 0 to 2 seconds.
 tt=0:0.001:2;
 yexact = 3*exp(-2*tt);     % Exact solution (in general we won't know this

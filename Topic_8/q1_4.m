@@ -1,7 +1,7 @@
 %% question 1
 
-h=0.01; %step size
-N=60; %number of steps
+h=0.001; %step size
+N=6000; %number of steps
 
 x=0:h:h*(N-1); %x values start at 0
 
@@ -74,6 +74,12 @@ for iStep=1:N-1
     ydash=(y(iStep)-x(iStep))^2; % current value y'=(y-x)^2
     y(iStep+1)=y(iStep)+h*ydash; % next value
 end
+
+figure;
+hold all
+plot(x,y,'-x')
+% plot(x,yactual);
+hold off
 
 %% question 4
 
